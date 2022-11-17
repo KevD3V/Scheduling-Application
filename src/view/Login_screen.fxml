@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: rgb(66, 133, 91);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginScreen">
+   <children>
+      <Label fx:id="loginText_label" layoutX="160.0" layoutY="10.0" prefHeight="55.0" prefWidth="106.0" text="Login">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="userNameLabel_text" layoutX="160.0" layoutY="150.0" text="Username">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLabel_text" layoutX="160.0" layoutY="220.0" text="Password">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userName_TextField" layoutX="160.0" layoutY="180.0" prefHeight="26.0" prefWidth="242.0" />
+      <TextField fx:id="password_TextField" layoutX="160.0" layoutY="250.0" prefHeight="26.0" prefWidth="242.0" />
+      <Button fx:id="enterBTN_text" layoutX="160.0" layoutY="320.0" mnemonicParsing="false" onAction="#onEnter" prefWidth="80.0" style="-fx-background-color: rgb(144, 183, 125);" text="Enter">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="exitBTN_text" layoutX="160.0" layoutY="390.0" mnemonicParsing="false" onAction="#onExit" prefWidth="80.0" style="-fx-background-color: rgb(144, 183, 125);" text="Exit">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="719.0" layoutY="149.0" prefHeight="55.0" prefWidth="106.0" text="ZONE ID" textAlignment="CENTER" underline="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="zoneID_Label" alignment="CENTER" contentDisplay="RIGHT" layoutX="662.0" layoutY="206.0" prefHeight="55.0" prefWidth="220.0" style="-fx-background-color: rgb(210, 215, 159);" text="ZoneID Display" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: rgb(72, 56, 56);" text="Customers" textAlignment="CENTER" textFill="#483838">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutY="150.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: rgb(72, 56, 56);" text="Appointments" textFill="#483838">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutY="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: rgb(72, 56, 56);" text="Reports" textFill="#483838">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutY="450.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: rgb(72, 56, 56);" text="Log Off" textFill="#483838">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

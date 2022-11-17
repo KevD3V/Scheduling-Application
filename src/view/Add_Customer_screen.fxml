@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: rgb(66, 133, 91);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerScreen">
+   <children>
+      <Label layoutX="160.0" layoutY="50.0" text="Name" />
+      <Label layoutX="160.0" layoutY="90.0" text="Address" />
+      <Label layoutX="160.0" layoutY="130.0" text="Postal Code" />
+      <Label layoutX="160.0" layoutY="170.0" prefHeight="18.0" prefWidth="88.0" text="Phone Number" />
+      <Label layoutX="160.0" layoutY="10.0" text="ID" />
+      <Label layoutX="160.0" layoutY="210.0" text="Country" />
+      <Label layoutX="160.0" layoutY="250.0" text="First-Level Division" />
+      <ComboBox fx:id="newCustomerCountry_ComboBox" layoutX="300.0" layoutY="210.0" onAction="#onCountrySelected" prefHeight="25.0" prefWidth="400.0" promptText="Select Country" />
+      <ComboBox fx:id="newCustomerFirstLevelDivision_ComboBox" layoutX="300.0" layoutY="250.0" prefHeight="25.0" prefWidth="400.0" promptText="Select First-Level Division" />
+      <TextField fx:id="newCustomerId_TextField" editable="false" layoutX="300.0" layoutY="10.0" prefHeight="25.0" prefWidth="400.0" promptText="Auto-Generated" />
+      <TextField fx:id="newCustomerName_TextField" layoutX="300.0" layoutY="50.0" prefHeight="25.0" prefWidth="400.0" promptText="Enter Name..." />
+      <TextField fx:id="newCustomerAddress_TextField" layoutX="300.0" layoutY="90.0" prefHeight="25.0" prefWidth="400.0" promptText="Enter Address ..." />
+      <TextField fx:id="newCustomerPostalCode_TextField" layoutX="300.0" layoutY="130.0" prefHeight="25.0" prefWidth="400.0" promptText="Enter Postal Code ..." />
+      <TextField fx:id="newCustomerPhoneNumber_TextField" layoutX="300.0" layoutY="170.0" prefHeight="25.0" prefWidth="400.0" promptText="Enter Phone Number ..." />
+      <Button fx:id="newCustomerSave_Button" layoutX="790.0" layoutY="490.0" mnemonicParsing="false" onAction="#onSave" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: lightgreen; -fx-background-radius: 10%;" text="Save" />
+      <Button mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: rgb(144, 183, 125); -fx-border-color: rgb(210, 215, 159); -fx-border-width: 5px;" text="Customers">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutY="150.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: rgb(72, 56, 56);" text="Appointments" textFill="#483838">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutY="300.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: rgb(72, 56, 56);" text="Reports" textFill="#483838">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutY="450.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: rgb(72, 56, 56);" text="Log Off" textFill="#483838">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="addCustomer_Cancel_BTN" layoutX="680.0" layoutY="490.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: lightgreen; -fx-background-radius: 10%;" text="Cancel" />
+      <Button layoutX="160.0" layoutY="490.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: lightgreen; -fx-background-radius: 10px; -fx-border-color: yellow; -fx-border-width: 5px; -fx-border-radius: 10px;" text="Add" />
+      <Button layoutX="270.0" layoutY="490.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: rgb(72, 56, 56); -fx-background-radius: 10px;" text="Update" textFill="#483838" />
+      <Button layoutX="380.0" layoutY="490.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: rgb(72, 56, 56); -fx-background-radius: 10px;" text="Delete" textFill="#483838" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: rgb(66, 133, 91);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerScreen">
+   <children>
+      <TableView fx:id="customerTable" layoutX="160.0" layoutY="10.0" prefHeight="450.0" prefWidth="730.0" style="-fx-background-color: white; -fx-border-color: rgb(210, 215, 159); -fx-border-width: 5px;">
+        <columns>
+          <TableColumn fx:id="customerIdCOL" prefWidth="50.0" text="ID" />
+          <TableColumn fx:id="customerNameCOL" prefWidth="150.0" text="Name" />
+            <TableColumn fx:id="customerAddressCOL" prefWidth="78.0" text="Address" />
+            <TableColumn fx:id="customerPostalCodeCOL" prefWidth="113.60000610351562" text="Postal Code" />
+            <TableColumn fx:id="customerPhoneNumberCOL" prefWidth="100.0" text="Phone Number" />
+            <TableColumn fx:id="customerDivisionIdCOL" prefWidth="70.0" text="Division ID" />
+            <TableColumn fx:id="customerCountryCOL" prefWidth="70.0" text="Country" />
+        </columns>
+      </TableView>
+      <Button fx:id="addCustomerBTN" layoutX="160.0" layoutY="490.0" mnemonicParsing="false" onAction="#onAddCustomer" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: lightgreen; -fx-background-radius: 10%;" text="Add" />
+      <Button fx:id="updateCustomerBTN" layoutX="270.0" layoutY="490.0" mnemonicParsing="false" onAction="#onUpdateCustomer" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: lightgreen; -fx-background-radius: 10%;" text="Update" />
+      <Button fx:id="deleteCustomerBTN" layoutX="380.0" layoutY="490.0" mnemonicParsing="false" onAction="#onDeleteCustomer" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: lightgreen; -fx-background-radius: 10%;" text="Delete" />
+      <Button mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: rgb(144, 183, 125); -fx-border-color: rgb(210, 215, 159); -fx-border-width: 5px;" text="Customers" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutY="150.0" mnemonicParsing="false" onAction="#onAppointments" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: rgb(144, 183, 125); -fx-border-color: rgb(72, 56, 56); -fx-border-width: 2px;" text="Appointments" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutY="300.0" mnemonicParsing="false" onAction="#onReports" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: rgb(144, 183, 125); -fx-border-color: rgb(72, 56, 56); -fx-border-width: 2px;" text="Reports">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutY="450.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: rgb(72, 56, 56); -fx-border-color: rgb(72, 56, 56); -fx-border-width: 2px;" text="Log Off" textFill="#483838">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="customerScreen_Message_TF" editable="false" layoutX="525.0" layoutY="490.0" prefHeight="25.0" prefWidth="365.0" />
+   </children>
+</AnchorPane>
